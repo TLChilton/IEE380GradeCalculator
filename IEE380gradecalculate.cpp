@@ -11,20 +11,20 @@ int main ()
     do
     {
         cout << "\n\033[0;93mEnter a -1 for one of the following prompts for a minimum grade analysis \n";
-        cout << "\033[0mEnter your exam 1 score: ";
+        cout << "\033[0mEnter your exam 1 score: \033[0;94m";
         cin >> E1;
         E1 = E1;
-        cout << "Enter your exam 2 score: ";
+        cout << "\033[0mEnter your exam 2 score: \033[0;94m";
         cin >> E2;
         E2 = E2;
-        cout << "Enter your final score: ";
+        cout << "\033[0mEnter your final score: \033[0;94m";
         cin >> F;
         F = F;
-        cout << "Enter your homework average score: ";
+        cout << "\033[0mEnter your homework average score: \033[0;94m";
         cin >> H;
-        cout << "Enter your project score: ";
+        cout << "\033[0mEnter your project score: \033[0;94m";
         cin >> P;
-        cout << "Enter your quiz score (out of 10): ";
+        cout << "\033[0mEnter your quiz score (out of 10): \033[0;94m";
         cin >> Q;
 
         Q = Q * 10;
@@ -122,19 +122,19 @@ int main ()
             AVG_1 = 70;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.09*Q + 0.07*P + 0.35*F))/0.1;
             if (AVG_1 < 100)
-                cout << "To get a C you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get a C you need to get a \033[0;92m" << AVG_1 << "\033[0m on the homework \n";
             else
                 cout << "\033[0;91mIt is impossible to get a C \n\033[0m";
             AVG_1 = 80;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.09*Q + 0.07*P + 0.35*F))/0.1;
             if (AVG_1 < 100)
-                cout << "To get a B you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get a B you need to get a \033[0;92m" << AVG_1 << "\033[0m on the homework \n";
             else
                 cout << "\033[0;91mIt is impossible to get a B \n\033[0m";
             AVG_1 = 90;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.09*Q + 0.07*P + 0.35*F))/0.1;
             if (AVG_1 < 100)
-                cout << "To get an A you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get an A you need to get a \033[0;92m" << AVG_1 << "\033[0m on the homework \n";
             else
                 cout << "\033[0;91mIt is impossible to get an A \n\033[0m";
 
@@ -164,19 +164,19 @@ int main ()
             AVG_1 = 70;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.1*H + 0.09*Q + 0.35*F))/0.07;
             if (AVG_1 < 100)
-                cout << "To get a C you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get a C you need to get a \033[0;92m" << AVG_1 << "\033[0m on the project \n";
             else
                 cout << "\033[0;91mIt is impossible to get a C \n\033[0m";
             AVG_1 = 80;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.1*H + 0.09*Q + 0.35*F))/0.07;
             if (AVG_1 < 100)
-                cout << "To get a B you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get a B you need to get a \033[0;92m" << AVG_1 << "\033[0m on the project \n";
             else
                 cout << "\033[0;91mIt is impossible to get a B \n\033[0m";
             AVG_1 = 90;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.1*H + 0.09*Q + 0.35*F))/0.07;
             if (AVG_1 < 100)
-                cout << "To get an A you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get an A you need to get a \033[0;92m" << AVG_1 << "\033[0m on the project \n";
             else
                 cout << "\033[0;91mIt is impossible to get an A \n\033[0m";
             
@@ -206,19 +206,19 @@ int main ()
             AVG_1 = 70;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.1*H + 0.07*P + 0.35*F))/0.09;
             if (AVG_1 < 100)
-                cout << "To get a C you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get a C you need to get a \033[0;92m" << AVG_1 << "\033[0m on the quizzes \n";
             else
                 cout << "\033[0;91mIt is impossible to get a C \n\033[0m";
             AVG_1 = 80;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.1*H + 0.07*P + 0.35*F))/0.09;
             if (AVG_1 < 100)
-                cout << "To get a B you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get a B you need to get a \033[0;92m" << AVG_1 << "\033[0m on the quizzes \n";
             else
                 cout << "\033[0;91mIt is impossible to get a B \n\033[0m";
             AVG_1 = 90;
             AVG_1 = (AVG_1 - (0.09*min(E1, E2) + 0.3*max(E1, E2) + 0.1*H + 0.07*P + 0.35*F))/0.09;
             if (AVG_1 < 100)
-                cout << "To get an A you need to get a \033[0;92m" << AVG_1 << "\033[0m on the final \n";
+                cout << "To get an A you need to get a \033[0;92m" << AVG_1 << "\033[0m on the quizzes \n";
             else
                 cout << "\033[0;91mIt is impossible to get an A \n\033[0m";
 
